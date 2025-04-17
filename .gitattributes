@@ -1,2 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# C# files
+*.cs linguist-language=C#
+*.csproj linguist-language=C#
+
+# Exclude web build files from language statistics
+LostinLars_web/* linguist-vendored
+LostinLars_web/**/* linguist-vendored
+*.html linguist-vendored
+*.js linguist-vendored
+*.css linguist-vendored
